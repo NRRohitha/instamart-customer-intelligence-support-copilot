@@ -11,8 +11,8 @@ Legend: `[ ]` not started · `[~]` in progress · `[x]` done and verified · `[!
 | Part B (28) | 15 | 15 | all checkpoints pass |
 | Part C (22) | 9 | 9 | all checkpoints pass |
 | Part D (28) | 14 | 14 | all checkpoints pass |
-| Final submission | 6 | 4 | local gates pass; publication/commit pending |
-| **Total** | **65** | **63** | **97%** |
+| Final submission | 6 | 6 | published on main |
+| **Total** | **65** | **65** | **100%** |
 
 ## Phase 0 — Setup
 
@@ -94,8 +94,8 @@ Legend: `[ ]` not started · `[~]` in progress · `[x]` done and verified · `[!
 - [x] **F2** README fully filled: all seven required sections in order; no TODO; every reported number present.
 - [x] **F3** Integrity: supplied hashes match; no secrets, `.env`, `.venv`, `__pycache__`, images, PDFs or charts committed.
 - [x] **F4** Artifact audit: all required paths and columns exist; `triage_results.csv` 164 rows; `agent_runs.jsonl` 7 scenario lines; ledger and `state/` populated.
-- [ ] **F5** Branch/public check: `main`, public repository, submitted link resolves to `/tree/main`.
-- [ ] **F6** Final commit and push on `main` (only when the user explicitly asks).
+- [x] **F5** Branch/public check: `main`, public repository, submitted link resolves to `/tree/main`.
+- [x] **F6** Final commit and push on `main` (only when the user explicitly asks).
 
 ## Reference checkpoint table
 
@@ -213,6 +213,7 @@ Use this as the single source of truth when asserting. The same values are avail
 | 2026-11-06 | `python -m src.part_d_rag` | PASS | 15 chunks; overlap 10: 12/12, 12/12, 2/2; overlap 0: 10/12 fact |
 | 2026-11-06 | `python -m src.part_d_agent` | PASS | S1-S7, token/time fallbacks, crash/resume all match |
 | 2026-11-06 | clean-copy full pipeline | PASS | all README commands in order; 5 tests OK |
+| 2026-11-06 | `git push -u origin main` | PASS | published https://github.com/NRRohitha/instamart-customer-intelligence-support-copilot |
 
 ## Decision log
 
@@ -221,5 +222,6 @@ Use this as the single source of truth when asserting. The same values are avail
 | 2026-11-06 | Modular `src/part_*.py` pipeline with `python -m` entry points | Matches the four-part dependency chain and keeps each stage independently verifiable |
 | 2026-11-06 | Pin exact `pip freeze` versions | Reproducibility is graded |
 | 2026-11-06 | Use stdlib `unittest` for setup tests | Allowed libraries only; no extra test dependency |
+
 
 

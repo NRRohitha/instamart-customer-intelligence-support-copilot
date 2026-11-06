@@ -6,7 +6,7 @@ An internal Customer Intelligence & Support Copilot for Swiggy Instamart, built 
 
 Build plan: `PLAN.md`. Progress tracker: `TRACKER.md`. Agent operating rules: `AGENTS.md`. Full extracted brief: `docs/ASSIGNMENT_BRIEF.md`.
 
-**Status:** final local deliverable ready. Folder/repository name: `instamart-customer-intelligence-support-copilot`. Clean-copy run of every README command passes all checkpoints; public repository publication and final commit/push remain pending explicit approval.
+**Status:** published at https://github.com/NRRohitha/instamart-customer-intelligence-support-copilot. Folder/repository name: `instamart-customer-intelligence-support-copilot`. Clean-copy run of every README command passes all checkpoints.
 
 ## Reproduce
 
@@ -279,4 +279,5 @@ ReAct interleaves one model call with one tool action. On the measured runs S1 n
 - The refund agent treats every request as inside the 7-day policy window and uses a fixed 45-minute refund rule; production rules, exceptions and manual approvals would be richer.
 - The system has no production monitoring, alerting, model calibration or privacy review beyond the regex redaction demonstrated here.
 - Next steps: integrate a real ticketing system and order service, calibrate lapse probabilities and choose campaign thresholds against retention economics, monitor data and model drift, add human-in-the-loop review dashboards, and strengthen PII detection beyond email, phone and order ID patterns.
+
 
