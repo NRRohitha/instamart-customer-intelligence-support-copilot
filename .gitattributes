@@ -1,0 +1,13 @@
+* text=auto
+
+generate_data.py text eol=lf
+mock_llm.py text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.sql text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.jsonl text eol=lf
+
+*.db binary
+*.joblib binary
